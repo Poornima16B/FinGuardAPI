@@ -1,4 +1,4 @@
-# FinGuard AI 🛡️
+﻿# FinGuard AI ðŸ›¡ï¸
 
 **Intelligent Financial Stability Advisor & Transaction Anomaly Shield**
 
@@ -6,17 +6,17 @@ FinGuard AI is a production-grade full-stack financial platform designed to help
 
 ---
 
-## 🌟 Key Capabilities
+## ðŸŒŸ Key Capabilities
 * **Financial Stability Index (FSI)**: Evaluates income volatility, monthly burn rate, and balance thresholds to generate a dynamic safety index.
 * **Stability Vault Configurator**: Supports automated payout sweeps (moves 15% of inbound income to reserves), UPI spending ceilings, and manual sandbox vault deposits.
 * **6-Month Trend Charting**: Displays a historical line chart tracking stability scores alongside an interactive Cushion Vault Status Panel.
 * **Account Aggregator Consent Flow**: Simulates a high-fidelity Indian Open Banking linkage (via Sahamati framework) to pull live starting balances.
-* **Conversational AI Advisor (Copilot)**: Suggests savings projections (7.2% CAGR yield), tactical budgets, proportional household expense splits, and flags outliers.
+* **Conversational AI Advisor (AI Advisor)**: Suggests savings projections (7.2% CAGR yield), tactical budgets, proportional household expense splits, and flags outliers.
 * **Real-time Anomaly Shield**: Dynamically flags double-billing velocity spikes and outlier expense transactions.
 
 ---
 
-## 💻 Technology Stack
+## ðŸ’» Technology Stack
 * **Frontend**: React 18, Vite, Recharts (visualizations), Lucide React (icons), Vanilla CSS (Slate Dark styling).
 * **Backend**: Java 17, Spring Boot 3.2.x, Spring Data JPA, Spring Security (Stateless JWT).
 * **Database**: H2 In-Memory DB (default for local sandbox dev) / PostgreSQL profile support.
@@ -24,34 +24,34 @@ FinGuard AI is a production-grade full-stack financial platform designed to help
 
 ---
 
-## 📂 Repository Layout
+## ðŸ“‚ Repository Layout
 ```text
 FinGuardAPI/
-├── backend/
-│   ├── src/main/java/com/finguard/api/
-│   │   ├── config/          # JWT Security, Web CORS, Data Seeder
-│   │   ├── controller/      # REST API Controllers (Swagger Annotated)
-│   │   ├── dto/             # Immutable Java 17 records
-│   │   ├── entity/          # JPA Hibernate Entities
-│   │   ├── exception/       # Global RestAdvice Interceptors
-│   │   ├── repository/      # Spring Data JPA interfaces
-│   │   └── service/         # Business Logic, FSI Math, Anomaly Interceptors
-│   ├── pom.xml              # Maven configuration
-│   └── Dockerfile
-├── frontend/
-│   ├── src/
-│   │   ├── App.jsx          # Main SPA (State management, API integration, views)
-│   │   ├── index.css        # Slate Dark global stylesheets and utility classes
-│   │   └── main.jsx         # React DOM renderer
-│   ├── package.json         # npm dependencies
-│   ├── vite.config.js       # Vite configuration
-│   └── Dockerfile
-└── docker-compose.yml       # Orchestrated multi-stage local containers
+â”œâ”€â”€ backend/
+â”‚   â”œâ”€â”€ src/main/java/com/finguard/api/
+â”‚   â”‚   â”œâ”€â”€ config/          # JWT Security, Web CORS, Data Seeder
+â”‚   â”‚   â”œâ”€â”€ controller/      # REST API Controllers (Swagger Annotated)
+â”‚   â”‚   â”œâ”€â”€ dto/             # Immutable Java 17 records
+â”‚   â”‚   â”œâ”€â”€ entity/          # JPA Hibernate Entities
+â”‚   â”‚   â”œâ”€â”€ exception/       # Global RestAdvice Interceptors
+â”‚   â”‚   â”œâ”€â”€ repository/      # Spring Data JPA interfaces
+â”‚   â”‚   â””â”€â”€ service/         # Business Logic, FSI Math, Anomaly Interceptors
+â”‚   â”œâ”€â”€ pom.xml              # Maven configuration
+â”‚   â””â”€â”€ Dockerfile
+â”œâ”€â”€ frontend/
+â”‚   â”œâ”€â”€ src/
+â”‚   â”‚   â”œâ”€â”€ App.jsx          # Main SPA (State management, API integration, views)
+â”‚   â”‚   â”œâ”€â”€ index.css        # Slate Dark global stylesheets and utility classes
+â”‚   â”‚   â””â”€â”€ main.jsx         # React DOM renderer
+â”‚   â”œâ”€â”€ package.json         # npm dependencies
+â”‚   â”œâ”€â”€ vite.config.js       # Vite configuration
+â”‚   â””â”€â”€ Dockerfile
+â””â”€â”€ docker-compose.yml       # Orchestrated multi-stage local containers
 ```
 
 ---
 
-## 🚀 Getting Started
+## ðŸš€ Getting Started
 
 ### Option A: Manual Local Startup (Recommended)
 
@@ -98,7 +98,7 @@ If you prefer to run both tiers in isolated containers:
 
 ---
 
-## 🔑 Sandbox Credentials
+## ðŸ”‘ Sandbox Credentials
 To access pre-seeded 180-day historical worker datasets, use the following credentials on the login screen:
 
 * **Password (Common for all accounts)**: `password123`
@@ -115,7 +115,7 @@ To access pre-seeded 180-day historical worker datasets, use the following crede
 
 ---
 
-## 🛡️ REST API Endpoint Summary
+## ðŸ›¡ï¸ REST API Endpoint Summary
 All transactional routes require a stateless Bearer token: `Authorization: Bearer <token>`.
 
 | Route | Method | Description |
@@ -127,3 +127,51 @@ All transactional routes require a stateless Bearer token: `Authorization: Beare
 | `/api/expense` | `POST` / `GET` | Log or view expenses (triggers anomaly interceptors) |
 | `/api/stability` | `GET` | Fetch latest calculated stability indexes and advice |
 | `/api/fraud/alerts` | `GET` / `PUT` | View or resolve flagged transaction warnings |
+
+---
+
+## ðŸ›¢ï¸ H2 Database Inspection Console
+To inspect the live seeded database tables in real-time:
+1. Open the H2 Web Console: [http://localhost:9080/h2-console](http://localhost:9080/h2-console)
+2. Enter the following JDBC credentials:
+   * **JDBC URL**: `jdbc:h2:mem:finguarddb`
+   * **User Name**: `sa`
+   * **Password**: `password`
+3. Click **Connect** to query database tables like `USERS`, `TRANSACTIONS`, `EXPENSES`, and `INCOMES` directly.
+
+---
+
+## ðŸ› ï¸ Code-Level Implementation Details
+
+Here is the location and logical flow of the core features in the codebase:
+
+1. **Financial Stability Index (FSI) Calculations**:
+   * **File**: [StabilityService.java](file:///c:/Users/poorn/Desktop/FinGuardAPI/backend/src/main/java/com/finguard/api/service/StabilityService.java)
+   * **Logic**: Evaluates historical `incomes` and `expenses` over 180 days. Computes the *coefficient of variation* (Standard Deviation / Mean) of user income streams to measure volatility. Combines this mathematically with the *monthly fixed burn rate* (Bills/Rent relative to overall earnings) to compute a score between 0 and 100.
+
+2. **Cushion Vault Sweep (Auto-Sweep)**:
+   * **File**: [App.jsx](file:///c:/Users/poorn/Desktop/FinGuardAPI/frontend/src/App.jsx) (inside `handleAddIncome`)
+   * **Logic**: When an income transaction is added, the React controller checks if `isAutoSweepActive` is true. If active, it calculates `15%` of the amount and sweeps it directly into the `stabilityVaultBalance` state, updating the UI balance indicators in real-time.
+
+3. **UPI Ceiling Limit breaches**:
+   * **File**: [App.jsx](file:///c:/Users/poorn/Desktop/FinGuardAPI/frontend/src/App.jsx) (inside `handleAddExpense`)
+   * **Logic**: On logging an expense, the app sums all expenses logged during the current calendar month. It compares the sum against the `cardLimitValue` state (configured using the range slider on the Profile tab). If the limit is crossed, it pushes a `LIMIT_SPIKE` notification warning to the dashboard banner.
+
+4. **Sahamati Account Aggregator bank linking**:
+   * **File**: [App.jsx](file:///c:/Users/poorn/Desktop/FinGuardAPI/frontend/src/App.jsx) (inside `AccountAggregatorModal` component)
+   * **Logic**: A multi-step React modal state machine. It transitions from Bank Picker -> Mobile handle input -> OTP Validation (requires OTP `123456`). Once validated, it pushes the bank account to `profileDetails.linkedAccounts`, updates `localStorage`, and imports a mock starting balance of **`â‚¹45,000.00`** to simulate a live bank fetch.
+
+5. **Real-time Transaction Anomaly Detection**:
+   * **File**: [FraudDetectionService.java](file:///c:/Users/poorn/Desktop/FinGuardAPI/backend/src/main/java/com/finguard/api/service/FraudDetectionService.java)
+   * **Logic**: Runs inside the database transactions lifecycle. When a new `Expense` is saved, it queries the `ExpenseRepository` for the user's category averages.
+     * **Outlier Spike**: Flags as anomaly if transaction amount is **> 2.5x** of the category average.
+     * **Velocity Spike**: Flags as anomaly if an identical category/amount exists on the same calendar day.
+     If a rule is broken, it creates a `FraudAlert` record in the database, triggering the warning indicator.
+
+6. **Conversational AI Advisor Chat**:
+   * **File**: [App.jsx](file:///c:/Users/poorn/Desktop/FinGuardAPI/frontend/src/App.jsx) (`handleSendChatMessage` and `renderMarkdownText`)
+   * **Logic**: Matches keywords (e.g. *invest*, *save*, *split*) in user text input:
+     * **CAGR Projection**: Computes compound savings growth over 1, 3, and 5 years at a **7.2% CAGR**.
+     * **Proportional splits**: Takes the user's average monthly income and splits bills proportionally with a partner earning â‚¹30,000 baseline.
+     * **Markdown Renderer**: Regex-parses headings, bold phrases, and list bullets into styled HTML badges.
+
