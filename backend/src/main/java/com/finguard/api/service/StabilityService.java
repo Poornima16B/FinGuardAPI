@@ -46,7 +46,7 @@ public class StabilityService {
                     70.0,
                     0.0,
                     "LOW",
-                    "Welcome to FinGuard AI! Start logging your daily gig earnings and expenses. Once logged, our AI engine will construct a personalized Volatility Index and Stability Score for you.",
+                    "Welcome! Start adding your income and expenses. We will show you a simple money health score and easy tips for you.",
                     LocalDateTime.now(),
                     0.0,
                     0.0,
@@ -128,29 +128,29 @@ public class StabilityService {
 
     private String buildAiSuggestions(User user, double fsi, double burnRate, double volatility, double savings, double balance) {
         StringBuilder sb = new StringBuilder();
-        sb.append(String.format("### FinGuard AI Advisor Report for %s (%s)\n", user.getFullName(), user.getProfession()));
-        sb.append(String.format("* **Financial Stability Score (FSI):** %.1f/100\n", fsi));
-        sb.append(String.format("* **Income Volatility Factor:** %.2f\n", volatility));
-        sb.append(String.format("* **Expense Burn Rate:** %.1f%%\n\n", burnRate * 100));
+        sb.append(String.format("### Money health report for %s (%s)\n", user.getFullName(), user.getProfession()));
+        sb.append(String.format("* **Your score:** %.1f out of 100 (higher is better)\n", fsi));
+        sb.append(String.format("* **Income ups and downs:** %.0f%% (how much your earnings change)\n", volatility * 100));
+        sb.append(String.format("* **Spending vs income:** %.1f%% of income goes to expenses\n\n", burnRate * 100));
 
         if (fsi < 45) {
-            sb.append("⚠️ **CRITICAL WARNING:** Your financial stability index is in the warning tier due to high outflows or extreme income volatility. \n\n");
-            sb.append("#### Action Items:\n");
-            sb.append("1. **Trim Burn Rate:** Discretionary costs should be capped immediately. Focus on cooking at home and halting subscriptions.\n");
-            sb.append("2. **Build Buffer Fund:** Since you work as a gig worker or freelancer, we advise maintaining an emergency deposit of at least 6 months of absolute basic expenses to cushion against dry spells.\n");
-            sb.append("3. **Income Diversification:** Look into booking consistent monthly retainer contracts rather than purely transactional gig jobs.");
+            sb.append("⚠️ **NEEDS ATTENTION:** You are spending a lot or your income changes too much. Please slow down non-essential spending.\n\n");
+            sb.append("#### What to do now:\n");
+            sb.append("1. **Cut extra spending** — cook at home, pause unused subscriptions, avoid big purchases this month.\n");
+            sb.append("2. **Build a safety fund** — try to save at least **6 months of basic expenses** for slow work periods.\n");
+            sb.append("3. **Steady income** — look for monthly retainers or repeat clients, not only one-time gigs.");
         } else if (fsi < 75) {
-            sb.append("🛡️ **MODERATE STANDING:** Your cash flow is positive but vulnerable to sudden dry spells due to moderate spending and income swings.\n\n");
-            sb.append("#### Action Items:\n");
-            sb.append("1. **Establish Rules:** Try setting aside 15% of every paycheck as soon as it clears, before you commit to any spending.\n");
-            sb.append("2. **Target Bills First:** Schedule automated rent and utilities sweeps during peak income weeks.\n");
-            sb.append(String.format("3. **Focus on Target Savings:** You are currently saving positive funds. Let's aim to allocate Rs %.2f monthly to close the gap on your annual goal of Rs %.2f.",
+            sb.append("🛡️ **OK BUT BE CAREFUL:** You are managing, but one bad month could hurt. Save a little more when income is good.\n\n");
+            sb.append("#### What to do now:\n");
+            sb.append("1. **Save first** — put aside **15%%** of every payment before you spend.\n");
+            sb.append("2. **Pay fixed bills early** — rent and utilities in the week you get paid.\n");
+            sb.append(String.format("3. **Hit your goal** — try to save **Rs %.0f per month** toward your target of **Rs %.0f**.",
                     savings, user.getTargetSavings()));
         } else {
-            sb.append("💎 **EXCELLENT STABILITY:** Your financial system is healthy. Volatility is minimal, and you are maintaining excellent cash margins!\n\n");
-            sb.append("#### Action Items:\n");
-            sb.append("1. **Sweep and Invest:** Your passive reserves are excellent. Sweep 20% of your current balance into a high-yield instrument to make your money work actively.\n");
-            sb.append(String.format("2. **Increase Targets:** Since you are comfortably on track to hit your savings goal (Rs %.2f), consider raising your threshold to build long-term capital assets.", user.getTargetSavings()));
+            sb.append("💎 **GOOD NEWS:** Your money situation looks healthy. You are saving well and keeping good control.\n\n");
+            sb.append("#### What to do now:\n");
+            sb.append("1. **Keep saving** — move extra money to RD or safe investments.\n");
+            sb.append(String.format("2. **Raise your goal** — you are close to **Rs %.0f/month** savings target; consider a higher long-term goal.", user.getTargetSavings()));
         }
 
         return sb.toString();

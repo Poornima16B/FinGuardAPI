@@ -3,6 +3,7 @@ package com.finguard.api.service;
 import com.finguard.api.config.JwtService;
 import com.finguard.api.dto.AuthResponse;
 import com.finguard.api.dto.LoginRequest;
+import com.finguard.api.dto.ProfileUpdateRequest;
 import com.finguard.api.dto.RegisterRequest;
 import com.finguard.api.entity.Role;
 import com.finguard.api.entity.User;
@@ -96,7 +97,7 @@ public class AuthService {
     }
 
     @Transactional
-    public User updateProfile(String username, RegisterRequest request) {
+    public User updateProfile(String username, ProfileUpdateRequest request) {
         User user = getAuthenticatedUser(username);
         user.setFullName(request.fullName());
         user.setProfession(request.profession());

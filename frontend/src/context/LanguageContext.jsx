@@ -34,15 +34,24 @@ export function LanguageProvider({ children }) {
     localStorage.setItem('language', language);
   }, [language]);
 
-  const translate = (key) => {
+  const translate = (key, vars = {}) => {
     const keys = key.split('.');
     let value = translations[language];
+    let fallbackValue = translations.en;
     
     for (let k of keys) {
       value = value?.[k];
+      fallbackValue = fallbackValue?.[k];
     }
-    
-    return value || key;
+
+    let result = value ?? fallbackValue ?? key;
+    if (typeof result !== 'string') return key;
+
+    Object.entries(vars).forEach(([name, val]) => {
+      result = result.replace(new RegExp(`{{${name}}}`, 'g'), String(val ?? ''));
+    });
+
+    return result;
   };
 
   return (

@@ -102,17 +102,7 @@
     "viewFullAdvisory": "ಪೂರ್ಣ ಸಲಹಾ ವರದಿಯನ್ನು ವೀಕ್ಷಿಸಿ",
     "recentTransactionsLog": "ಇತ್ತೀಚಿನ ವಹಿವಾಟುಗಳ ದಾಖಲೆ",
     "accountUpi": "ಖಾತೆ / UPI",
-    "cash": "ನಗದು",
-    "safeToSpendToday": "Safe to Spend Today",
-    "safeToSpendHint": "After vault buffer, savings target, and weekly burn reserve.",
-    "safeToSpendDaysLeft": "{{days}} days left this month",
-    "safeToSpendStatusHealthy": "On track — pace discretionary spending.",
-    "safeToSpendStatusTight": "Tight budget — defer non-essentials today.",
-    "safeToSpendStatusCritical": "Buffer low — avoid discretionary spending.",
-    "savingsGoalProgress": "Monthly Savings Goal",
-    "savingsGoalOf": "{{saved}} of {{target}} target",
-    "savingsGoalComplete": "Target reached this month!",
-    "spendablePool": "Month headroom"
+    "cash": "ನಗದು"
   },
   "income": {
     "title": "ಆದಾಯ",
@@ -386,9 +376,9 @@
     "bankLinkedTitle": "ಬ್ಯಾಂಕ್ ಯಶಸ್ವಿಯಾಗಿ ಲಿಂಕ್ ಆಗಿದೆ",
     "bankLinkedMessage": "{{bank}} ಖಾತೆ ({{account}}) ಸಂಪರ್ಕಗೊಂಡಿದೆ. {{amount}} ಪ್ರಾರಂಭಿಕ ಬ್ಯಾಲೆನ್ಸ್ ಆಮದು ಮಾಡಲಾಗಿದೆ.",
     "ceilingExceeded": "ಮಿತಿ ಮೀರಿದೆ: ಮಾಸಿಕ ಹೊರಪ್ರವಾಹಗಳು ನಿಮ್ಮ ಕಾನ್ಫಿಗರ್ ಮಾಡಿದ UPI ಮಿತಿಯನ್ನು ದಾಟಿವೆ.",
+    "ceilingExceededDetail": "ಮಿತಿ ಮೀರಿದೆ: ಮಾಸಿಕ ಹೊರಪ್ರವಾಹಗಳು ({{expense}}) ನಿಮ್ಮ ಕಾನ್ಫಿಗರ್ ಮಾಡಿದ {{limit}} ಮಿತಿಯನ್ನು ಉಲ್ಲಂಘಿಸುತ್ತವೆ.",
     "spendingLimitBreached": "ಖರ್ಚು ಮಿತಿ ಉಲ್ಲಂಘಿಸಲಾಗಿದೆ",
-    "suspiciousExpense": "ಅನುಮಾನಾಸ್ಪದ ಚಟುವಟಿಕೆ ಗುರುತಿಸಲಾಗಿದೆ: {{category}} ನಲ್ಲಿ {{amount}} ಖರ್ಚು.",
-    "ceilingExceededDetail": "ಮಿತಿ ಮೀರಿದೆ: ಮಾಸಿಕ ಹೊರಪ್ರವಾಹಗಳು ({{expense}}) ನಿಮ್ಮ ಕಾನ್ಫಿಗರ್ ಮಾಡಿದ {{limit}} ಮಿತಿಯನ್ನು ಉಲ್ಲಂಘಿಸುತ್ತವೆ."
+    "suspiciousExpense": "ಅನುಮಾನಾಸ್ಪದ ಚಟುವಟಿಕೆ ಗುರುತಿಸಲಾಗಿದೆ: {{category}} ನಲ್ಲಿ {{amount}} ಖರ್ಚು."
   },
   "transactions": {
     "income": "ಆದಾಯ",
@@ -495,12 +485,6 @@
         "title": "ಉಳಿತಾಯ ಗುರಿ",
         "onTrack": "ನಿಮ್ಮ {{target}} ಮಾಸಿಕ ಉಳಿತಾಯ ಗುರಿಯತ್ತ ಸರಿಯಾದ ದಾರಿಯಲ್ಲಿ.",
         "below": "ನಿಮ್ಮ {{target}} ಗುರಿಗಿಂತ {{gap}} ಕಡಿಮೆ."
-      },
-      "safeSpend": {
-        "title": "Daily Spending Headroom",
-        "message": "You can safely spend about {{amount}} today with {{days}} days left this month.",
-        "critical": "Daily headroom is low — protect your vault and defer non-essential purchases.",
-        "empty": "Add income and expense records to calculate daily spending headroom."
       }
     },
     "recommendations": {

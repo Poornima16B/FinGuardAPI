@@ -23,6 +23,15 @@ application:
       # HS256 requires a secret key of at least 256 bits (32 bytes), represented as Base64 below
       secret-key: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
       expiration-ms: 86400000 # 24 Hours in Milliseconds
+  ai:
+    enabled: true
+    # Providers: openai | gemini | ollama
+    provider: ${FINGUARD_AI_PROVIDER:gemini}
+    api-key: ${FINGUARD_AI_API_KEY:}
+    model: ${FINGUARD_AI_MODEL:gemini-2.0-flash}
+    base-url: ${FINGUARD_AI_BASE_URL:https://generativelanguage.googleapis.com/v1beta}
+    max-history-messages: 8
+    timeout-seconds: 45
 
 ---
 # Default Profile - H2 In-Memory DB (For instant out-of-the-box execution)

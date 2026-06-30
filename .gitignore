@@ -23,6 +23,8 @@ frontend/.env.production.local
 frontend/npm-debug.log*
 frontend/yarn-debug.log*
 frontend/yarn-error.log*
+frontend/vite.out.log
+frontend/vite.err.log
 
 # Backend Build Outputs & Database
 backend/target/
@@ -33,3 +35,12 @@ backend/h2/
 # Temp files
 *.tmp
 *.bak
+.env
+backend/.env
+
+# Secrets / API keys - never commit these
+.env.example
+
+# Unnecessary report/doc files
+PROJECT_REPORT_BRIEF.md
+*.docx

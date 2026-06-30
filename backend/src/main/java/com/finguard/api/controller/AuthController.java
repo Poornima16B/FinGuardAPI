@@ -2,6 +2,7 @@ package com.finguard.api.controller;
 
 import com.finguard.api.dto.AuthResponse;
 import com.finguard.api.dto.LoginRequest;
+import com.finguard.api.dto.ProfileUpdateRequest;
 import com.finguard.api.dto.RegisterRequest;
 import com.finguard.api.entity.User;
 import com.finguard.api.service.AuthService;
@@ -47,7 +48,7 @@ public class AuthController {
 
     @PutMapping("/profile")
     @Operation(summary = "Update user profile details", description = "Allows updating user's full name, profession, and target savings goal.")
-    public ResponseEntity<User> updateProfile(Principal principal, @Valid @RequestBody RegisterRequest request) {
+    public ResponseEntity<User> updateProfile(Principal principal, @Valid @RequestBody ProfileUpdateRequest request) {
         if (principal == null) {
             return ResponseEntity.status(401).build();
         }

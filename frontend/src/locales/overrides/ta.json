@@ -102,17 +102,7 @@
     "viewFullAdvisory": "முழு ஆலோசனை அறிக்கையைக் காண்க",
     "recentTransactionsLog": "சமீபத்திய பரிவர்த்தனை பதிவு",
     "accountUpi": "கணக்கு / UPI",
-    "cash": "பணம்",
-    "safeToSpendToday": "Safe to Spend Today",
-    "safeToSpendHint": "After vault buffer, savings target, and weekly burn reserve.",
-    "safeToSpendDaysLeft": "{{days}} days left this month",
-    "safeToSpendStatusHealthy": "On track — pace discretionary spending.",
-    "safeToSpendStatusTight": "Tight budget — defer non-essentials today.",
-    "safeToSpendStatusCritical": "Buffer low — avoid discretionary spending.",
-    "savingsGoalProgress": "Monthly Savings Goal",
-    "savingsGoalOf": "{{saved}} of {{target}} target",
-    "savingsGoalComplete": "Target reached this month!",
-    "spendablePool": "Month headroom"
+    "cash": "பணம்"
   },
   "income": {
     "title": "வருமானம்",
@@ -386,9 +376,9 @@
     "bankLinkedTitle": "வங்கி வெற்றிகரமாக இணைக்கப்பட்டது",
     "bankLinkedMessage": "{{bank}} கணக்கு ({{account}}) இணைக்கப்பட்டது. {{amount}} தொடக்க இருப்பு இறக்குமதி செய்யப்பட்டது.",
     "ceilingExceeded": "உச்சவரம்பு மீறப்பட்டது: மாதாந்திர வெளிப்புழக்கங்கள் உங்கள் அமைக்கப்பட்ட UPI வரம்பைக் கடந்துவிட்டன.",
+    "ceilingExceededDetail": "உச்சவரம்பு மீறப்பட்டது: மாதாந்திர வெளிப்புழக்கங்கள் ({{expense}}) உங்கள் அமைக்கப்பட்ட {{limit}} வரம்பை மீறுகின்றன.",
     "spendingLimitBreached": "செலவு வரம்பு மீறப்பட்டது",
-    "suspiciousExpense": "சந்தேகத்திற்குரிய நடவடிக்கை குறிக்கப்பட்டது: {{category}}-இல் {{amount}} செலவு.",
-    "ceilingExceededDetail": "உச்சவரம்பு மீறப்பட்டது: மாதாந்திர வெளிப்புழக்கங்கள் ({{expense}}) உங்கள் அமைக்கப்பட்ட {{limit}} வரம்பை மீறுகின்றன."
+    "suspiciousExpense": "சந்தேகத்திற்குரிய நடவடிக்கை குறிக்கப்பட்டது: {{category}}-இல் {{amount}} செலவு."
   },
   "transactions": {
     "income": "வருமானம்",
@@ -495,12 +485,6 @@
         "title": "சேமிப்பு இலக்கு",
         "onTrack": "உங்கள் {{target}} மாதாந்திர சேமிப்பு இலக்கை நோக்கி சரியான பாதையில்.",
         "below": "உங்கள் {{target}} இலக்கை {{gap}}-ஆல் குறைவாக."
-      },
-      "safeSpend": {
-        "title": "Daily Spending Headroom",
-        "message": "You can safely spend about {{amount}} today with {{days}} days left this month.",
-        "critical": "Daily headroom is low — protect your vault and defer non-essential purchases.",
-        "empty": "Add income and expense records to calculate daily spending headroom."
       }
     },
     "recommendations": {
