@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+﻿import React, { useState, useEffect, useRef } from 'react';
 import { 
   Shield, 
   TrendingUp, 
@@ -622,7 +622,7 @@ export default function App() {
         setStabilityAdvice(data.aiSuggestions);
     } catch (err) {
       // Mock static suggestion logic
-      setStabilityAdvice(`### FinGuard AI Advisor Report for John Doe (Freelancer)\n* **Financial Stability Score (FSI):** 82.5/100\n* **Income Volatility Factor:** 0.28\n* **Expense Burn Rate:** 64.8%\n\n💎 **EXCELLENT STABILITY:** Your financial system is healthy. Volatility is minimal, and you are maintaining excellent cash margins!\n\n#### Action Items:\n1. **Sweep and Invest:** Your passive reserves are excellent. Sweep 20% of your current balance into a high-yield instrument.\n2. **Increase Targets:** Since you are comfortably on track to hit your savings goal (Rs 1,500), consider raising your threshold to build long-term capital assets.`);
+      setStabilityAdvice(`### FinGuard API Advisor Report for John Doe (Freelancer)\n* **Financial Stability Score (FSI):** 82.5/100\n* **Income Volatility Factor:** 0.28\n* **Expense Burn Rate:** 64.8%\n\n💎 **EXCELLENT STABILITY:** Your financial system is healthy. Volatility is minimal, and you are maintaining excellent cash margins!\n\n#### Action Items:\n1. **Sweep and Invest:** Your passive reserves are excellent. Sweep 20% of your current balance into a high-yield instrument.\n2. **Increase Targets:** Since you are comfortably on track to hit your savings goal (Rs 1,500), consider raising your threshold to build long-term capital assets.`);
     }
   };
 
@@ -1244,7 +1244,7 @@ export default function App() {
                 <Shield size={22} strokeWidth={2.2} />
               </span>
             <div>
-                <h1 className="login-hero-name">FinGuard AI</h1>
+                <h1 className="login-hero-name">FinGuard API</h1>
                 <span className="login-hero-tag">{t('ui.brandTagline')}</span>
             </div>
           </div>

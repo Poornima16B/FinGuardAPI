@@ -1,8 +1,8 @@
-﻿# FinGuard AI ðŸ›¡ï¸
+﻿# FinGuard API ðŸ›¡ï¸
 
 **Intelligent Financial Stability Advisor & Transaction Anomaly Shield**
 
-FinGuard AI is a production-grade full-stack financial platform designed to help freelancers, gig-economy workers, and variable-income professionals manage their volatile cash flows. The platform calculates a dynamic Financial Stability Index (FSI), hosts a Cushion Vault (Stability Sweep), and detects real-time transaction anomalies.
+FinGuard API is a production-grade full-stack financial platform designed to help freelancers, gig-economy workers, and variable-income professionals manage their volatile cash flows. The platform calculates a dynamic Financial Stability Index (FSI), hosts a Cushion Vault (Stability Sweep), and detects real-time transaction anomalies.
 
 ---
 

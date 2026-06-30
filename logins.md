@@ -1,4 +1,4 @@
-# Seeded Test Logins — FinGuard AI 🛡️
+﻿# Seeded Test Logins — FinGuard API 🛡️
 
 Here is a list of all pre-seeded worker profiles you can use to test the platform.
 

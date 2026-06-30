@@ -1,4 +1,4 @@
-package com.finguard.api.service;
+﻿package com.finguard.api.service;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -72,7 +72,7 @@ public class AiAdvisorService {
                 : dashboard.fraudAlerts().stream().filter(a -> "ACTIVE".equalsIgnoreCase(a.status())).count();
 
         return """
-                You are FinGuard AI, an expert financial advisor for Indian freelancers, gig workers, and variable-income professionals.
+                You are FinGuard API, an expert financial advisor for Indian freelancers, gig workers, and variable-income professionals.
 
                 User profile:
                 - Name: %s

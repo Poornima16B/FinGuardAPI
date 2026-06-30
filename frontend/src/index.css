@@ -1,4 +1,4 @@
-/* Global Design System - FinGuard AI Ultra-Premium Aesthetics v2 */
+﻿/* Global Design System - FinGuard API Ultra-Premium Aesthetics v2 */
 
 :root {
   --font-heading: 'Outfit', sans-serif;
@@ -2942,7 +2942,7 @@ body {
   background: linear-gradient(135deg, #1d4ed8 0%, #0f766e 100%) !important;
 }
 
-/* ===== SIDEBAR: Premium FinGuard AI Fintech ===== */
+/* ===== SIDEBAR: Premium FinGuard API Fintech ===== */
 .finguard-sidebar {
   --sidebar-border: rgba(255, 255, 255, 0.08);
   --sidebar-hover: rgba(255, 255, 255, 0.06);

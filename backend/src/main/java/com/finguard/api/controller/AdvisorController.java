@@ -1,4 +1,4 @@
-package com.finguard.api.controller;
+﻿package com.finguard.api.controller;
 
 import com.finguard.api.dto.AdvisorChatRequest;
 import com.finguard.api.dto.AdvisorChatResponse;
@@ -30,7 +30,7 @@ public class AdvisorController {
     }
 
     @PostMapping("/chat")
-    @Operation(summary = "Chat with FinGuard AI Advisor",
+    @Operation(summary = "Chat with FinGuard API Advisor",
             description = "Uses OpenAI, Gemini, or Ollama when configured. Falls back to rule-based advisor if no API key is set.")
     public ResponseEntity<AdvisorChatResponse> chat(@Valid @RequestBody AdvisorChatRequest request, Principal principal) {
         User user = authService.getAuthenticatedUser(principal.getName());

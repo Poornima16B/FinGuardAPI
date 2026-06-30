@@ -1,4 +1,4 @@
-package com.finguard.api.service;
+﻿package com.finguard.api.service;
 
 import com.finguard.api.dto.DashboardSummary;
 import com.finguard.api.dto.StabilityResponse;
@@ -89,7 +89,7 @@ public class AdvisorFallbackService {
 
         if (containsAny(textLower, "hello", "hi", "hey", "help")) {
             return """
-                    Hello! I'm FinGuard AI Advisor (local mode — add an API key for live LLM responses).
+                    Hello! I'm FinGuard API Advisor (local mode — add an API key for live LLM responses).
 
                     Ask about: savings, investments, budgets, FSI score, burn rate, or anomaly alerts.
                     """;
