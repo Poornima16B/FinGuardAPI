@@ -1,4 +1,4 @@
-{
+﻿{
   "common": {
     "appName": "FinGuard AI",
     "tagline": "Freelancer Financial Stability & Anomaly Shield",
@@ -97,7 +97,7 @@
     "activeSpendingLimit": "Active Spending Limit:",
     "unlimited": "Unlimited",
     "autoSweepHelp": "Auto-sweep moves 15% of all incomes logged under the Incomes tab directly to the Vault. Configure sweep rates and UPI locks in the Profile tab.",
-    "aiCopilotInsights": "AI Copilot Insights",
+    "aiCopilotInsights": "AI Advisor Insights",
     "analyzingTrends": "Analyzing historic gig flow trends...",
     "viewFullAdvisory": "View Full Advisory Report",
     "recentTransactionsLog": "Recent Transactions Log",
@@ -171,9 +171,9 @@
     "months": "Months",
     "runwayHint": "How long current balance lasts based on this month's cash burn.",
     "predictiveReport": "AI Predictive Health Report",
-    "copilotChat": "AI Copilot Chat",
+    "copilotChat": "AI Advisor Chat",
     "reportTab": "Report",
-    "copilotTab": "AI Copilot",
+    "copilotTab": "AI Advisor",
     "reportSubtitle": "Volatility-aware analysis of your income streams, fixed outflows, and recommended buffer.",
     "chatSubtitle": "Ask about savings, budgets, risk, and anomaly alerts from your live data.",
     "assemblingModels": "Assembling predictive models...",
@@ -181,20 +181,20 @@
     "liveAi": "Live AI",
     "fallbackAdvisor": "Smart fallback advisor",
     "offlineAdvisor": "Offline local advisor",
-    "copilotName": "FinGuard AI Copilot",
-    "chipSavings": "Savings Advice 💰",
-    "chipInvest": "Invest Wisely 📈",
-    "chipBudget": "Tactical Budgeting 📅",
-    "chipSplit": "Split Expenses 🤝",
-    "chipStability": "Stability Score 🛡️",
-    "chipOutliers": "Outlier Alerts ⚠️",
-    "chatPlaceholder": "Ask FinGuard AI Copilot...",
-    "copilotGreeting": "Hello! I'm your FinGuard AI Copilot. Ask me about savings, investments, budgets, or risk based on your income, FSI score, and alerts.",
-    "localSummary": "Based on your FSI of {{score}}, balance {{balance}}, and {{risk}} risk — focus on building a 2-month buffer before discretionary spending.",
-    "liveAiProvider": "Live AI · {{provider}}",
-    "localSavingsPlan": "### 💰 Savings Plan\nBalance **{{balance}}**, savings potential **{{savings}}/mo**. Auto-sweep 15% of payouts and target a **{{runway}}-month** runway.",
-    "localInvestGuidance": "### 📈 Investment Guidance\nStart SIPs only after a 3-month emergency buffer. With **{{savings}}/mo** capacity, prefer large-cap index funds and RDs over high-risk trades.",
-    "localSummaryFull": "### 🛡️ FinGuard Summary\n**{{profession}}** · FSI **{{score}}/100** ({{risk}})\nBalance **{{balance}}** · Runway **{{runway}} months**\nAsk about savings, investing, budgets, or anomaly alerts. (Offline local mode)"
+    "copilotName": "FinGuard AI Advisor",
+    "chipSavings": "Savings Advice ðŸ’°",
+    "chipInvest": "Invest Wisely ðŸ“ˆ",
+    "chipBudget": "Tactical Budgeting ðŸ“…",
+    "chipSplit": "Split Expenses ðŸ¤",
+    "chipStability": "Stability Score ðŸ›¡ï¸",
+    "chipOutliers": "Outlier Alerts âš ï¸",
+    "chatPlaceholder": "Ask FinGuard AI Advisor...",
+    "copilotGreeting": "Hello! I'm your FinGuard AI Advisor. Ask me about savings, investments, budgets, or risk based on your income, FSI score, and alerts.",
+    "localSummary": "Based on your FSI of {{score}}, balance {{balance}}, and {{risk}} risk â€” focus on building a 2-month buffer before discretionary spending.",
+    "liveAiProvider": "Live AI Â· {{provider}}",
+    "localSavingsPlan": "### ðŸ’° Savings Plan\nBalance **{{balance}}**, savings potential **{{savings}}/mo**. Auto-sweep 15% of payouts and target a **{{runway}}-month** runway.",
+    "localInvestGuidance": "### ðŸ“ˆ Investment Guidance\nStart SIPs only after a 3-month emergency buffer. With **{{savings}}/mo** capacity, prefer large-cap index funds and RDs over high-risk trades.",
+    "localSummaryFull": "### ðŸ›¡ï¸ FinGuard Summary\n**{{profession}}** Â· FSI **{{score}}/100** ({{risk}})\nBalance **{{balance}}** Â· Runway **{{runway}} months**\nAsk about savings, investing, budgets, or anomaly alerts. (Offline local mode)"
   },
   "anomaly": {
     "title": "Anomaly Detection",
@@ -215,7 +215,7 @@
     "auditLog": "Live Security Audit Log",
     "auditLogSubtitle": "Real-time heuristic protection flagging unusual velocity and outlier transactions.",
     "loggedAt": "Logged:",
-    "transactionRef": "Transaction ref: {{category}} — amount of {{amount}}",
+    "transactionRef": "Transaction ref: {{category}} â€” amount of {{amount}}",
     "resolveAlert": "Resolve Alert",
     "dismiss": "Dismiss",
     "resolvedStatus": "Resolved ({{status}})",
@@ -421,7 +421,7 @@
     "uploadTitle": "Upload Receipt",
     "uploadHint": "Upload a clear photo of a receipt. OCR will extract merchant, amount, and date for review.",
     "chooseImage": "Choose Image",
-    "processing": "Running OCR on receipt…",
+    "processing": "Running OCR on receiptâ€¦",
     "progress": "OCR Progress",
     "success": "Receipt scanned. Review and edit the extracted fields below.",
     "error": "Could not read this receipt. Try a clearer image or enter details manually.",
@@ -439,7 +439,7 @@
     "title": "AI Spending Insights",
     "subtitle": "Rule-based analysis from your income, expenses, and stability data.",
     "downloadReport": "Download Report",
-    "generating": "Generating…",
+    "generating": "Generatingâ€¦",
     "reportError": "Could not generate the PDF report. Please try again.",
     "severity": {
       "success": "Positive",
@@ -456,7 +456,7 @@
       "savings": {
         "title": "Savings Outlook",
         "message": "Estimated savings rate is {{rate}}% with {{potential}} potential reserves.",
-        "negative": "Expenses exceed income — prioritize reducing outflows this month."
+        "negative": "Expenses exceed income â€” prioritize reducing outflows this month."
       },
       "topCategory": {
         "title": "Largest Expense Category",
@@ -465,12 +465,12 @@
       "expenseTrend": {
         "title": "Recent Spending Trend",
         "up": "Recent expenses are up {{pct}}% compared with earlier entries.",
-        "down": "Recent expenses are down {{pct}}% — spending is easing.",
+        "down": "Recent expenses are down {{pct}}% â€” spending is easing.",
         "stable": "Spending has been relatively steady across recent transactions."
       },
       "incomeStability": {
         "title": "Income Stability",
-        "strong": "{{count}} income entries logged — diversified inflows support a stronger FSI.",
+        "strong": "{{count}} income entries logged â€” diversified inflows support a stronger FSI.",
         "limited": "Limited income entries detected. Log all gig and freelance payouts for accurate stability scoring.",
         "none": "No income transactions yet. Add income records to assess cash-flow stability."
       },
@@ -496,10 +496,11 @@
       "aimSavings": "Aim to save at least 15-20% of monthly income for irregular cash flow.",
       "buildEmergency": "Build a 2-3 month emergency fund to improve your Financial Stability Index.",
       "trackFixed": "Track fixed costs closely and avoid large one-time purchases this month.",
-      "fsiHealthy": "Your FSI is healthy — consider allocating extra savings toward long-term goals.",
-      "reviewCategory": "Review {{category}} spending — your highest expense category at {{amount}}.",
+      "fsiHealthy": "Your FSI is healthy â€” consider allocating extra savings toward long-term goals.",
+      "reviewCategory": "Review {{category}} spending â€” your highest expense category at {{amount}}.",
       "belowTarget": "You are below your savings target of {{target}}. Trim non-essential expenses.",
       "reviewAlerts": "Review active anomaly alerts and verify recent high-value transactions."
     }
   }
 }
+
